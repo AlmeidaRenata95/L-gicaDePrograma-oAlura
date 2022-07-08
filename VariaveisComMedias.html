@@ -57,7 +57,30 @@
   document.write("<br>");
   document.write("A idade de " + nome + "é" + idadeFlavio); //o js irá concatenar e pegar os valores que atribuimos para as variaveis//
 
+  //o Javascript permite que nossas variáveis recebam a qualquer momento outro valor, afetando e atribuindo um resultado. //
+  //mnanutenção do código utilizando apenas uma variavel
+  var ano = 2016;
 
+  document.write("Flávio tem " + (ano - 1977) + " anos");
+  document.write("<br>");
+  document.write("Joaquim tem " + (ano - 1996) + " anos");
+  document.write("<br>");
+
+  ano = 2017;
+  document.write("Barney tem " + (ano - 1976) + " anos");
+  document.write("<br>");
+  //na sequencia vamos atribuir uma nova variável que receberá um valor, e terá um resultado.//
+  var ano = 2016;
+  var puloLinha = ("<br>");
+  document.write("Flávio tem " + (ano - 1977) + " anos");
+  document.write("puloLinha"); // ao receber esse valor ele fará a msm coisa se tivesse o br normal. 
+
+  document.write("Joaquim tem " + (ano - 1996) + " anos");
+  document.write("puloLinha");
+
+  ano = 2017;
+  document.write("Barney tem " + (ano - 1976) + " anos");
+  document.write("<br>");
 </script>
 <ul>
   <li><a href="ExercicioAula03_OdetetiveRoy.html">Exercicio Aula 3_Variáveis - O Detetive Roy</a></li>
