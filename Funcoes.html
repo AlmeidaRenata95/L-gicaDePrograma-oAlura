@@ -21,62 +21,71 @@
 
 <script>
   // // iniciando funções. Esclarecendo que na programação é ruim termos que toda hora escrever document.write para exibir no html.
-  // //Existe a forma no bloco de baixo para deixar o código mais simples. 
+  // //Existe a forma no bloco de baixo para deixar o código mais simples.
   // var ano = 2016;
-  // var puloLinha = ("<br><br><br>");
-  // document.write("Flávio tem " + (ano - 1977) + " anos");
-  // document.write("puloLinha"); //ao receber esse valor ele fará a msm coisa se tivesse o br normal. 
+  // // var puloLinha = ("<br><br><br>");
+  // // document.write("Flávio tem " + (ano - 1977) + " anos");
+  // // document.write("puloLinha"); //ao receber esse valor ele fará a msm coisa se tivesse o br normal.
 
-  // document.write("Joaquim tem " + (ano - 1996) + " anos");
-  // document.write("puloLinha");
+  // // document.write("Joaquim tem " + (ano - 1996) + " anos");
+  // // document.write("puloLinha");
 
-  // ano = 2017;
-  // document.write("Barney tem " + (ano - 1976) + " anos");
-  // document.write("<br>");
+  // // ano = 2017;
+  // // document.write("Barney tem " + (ano - 1976) + " anos");
+  // // document.write("<br>");
 
-  //FUNÇÕES - tudo que estiver dentro do bloco da função até o final dos conchete pertence a função pulalinha. A função indica uma ação a ser executada
+  // //FUNÇÕES - tudo que estiver dentro do bloco da função até o final dos conchete pertence a função pulalinha. A função indica uma ação a ser executada
+  // // function pulaLinha() {
+  // //   document.write("<br><br><br>"); //Isso pertence a função pulaLinha, smp q estiver dentro de um bloco, deverá identar.
+  // //   //document.write("<br>");
+  // // }
+  // // var ano = 2016;
+
+  // // document.write("Flávio tem " + (ano - 1977) + " anos");
+  // // pulaLinha();
+
+  // // document.write("Joaquim tem " + (ano - 1996) + " anos");
+  // // pulaLinha();
+
+  // // ano = 2017;
+  // // document.write("Barney tem " + (ano - 1976) + " anos");
+  // // document.write("<br>");
+
+  // // O bloco de função é um atalho que pode receber mais de uma instrução.Quando o JS chega na  instrução
+  // // ele volta no bloco da função e entende o que deverá ser feito na instrução.O legal é que não precisamos ficar reenscrevendo.
+  // // O nome da função sempre deve ser claro / o que ele faz e é.
+  // //FUNÇÃO COM PARAMETRO
   // function pulaLinha() {
-  //   document.write("<br><br><br>"); //Isso pertence a função pulaLinha, smp q estiver dentro de um bloco, deverá identar.
-  //   //document.write("<br>");
+  //   document.write("<br>");
+  //   document.write("<br>");
   // }
+
+  // function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
+  //   document.write(frase);
+  //   // pulaLinha();
+
+  // }
+
   // var ano = 2016;
 
-  // document.write("Flávio tem " + (ano - 1977) + " anos");
+  // mostra("Flávio tem " + (ano - 1977) + " anos");
   // pulaLinha();
 
-  // document.write("Joaquim tem " + (ano - 1996) + " anos");
+  // mostra("Joaquim tem " + (ano - 1996) + " anos");
   // pulaLinha();
 
   // ano = 2017;
-  // document.write("Barney tem " + (ano - 1976) + " anos");
-  // document.write("<br>");
-
-  // O bloco de função é um atalho que pode receber mais de uma instrução.Quando o JS chega na  instrução
-  // ele volta no bloco da função e entende o que deverá ser feito na instrução.O legal é que não precisamos ficar reenscrevendo. 
-  // O nome da função sempre deve ser claro / o que ele faz e é. 
-  //FUNÇÃO COM PARAMETRO 
-  function pulaLinha() {
-    document.write("<br>");
-    document.write("<br>");
-  }
-
-  function mostra(frase) { // aqui vai o parametro
-    document.write(frase);
-
-  }
-
-  var ano = 2016;
-
-  mostra("Flávio tem " + (ano - 1977) + " anos");
-  pulaLinha();
-
-  mostra("Joaquim tem " + (ano - 1996) + " anos");
-  pulaLinha();
-
-  ano = 2017;
-  mostra("Barney tem " + (ano - 1976) + " anos");
-  mostra("Olá Pessoal!");
+  // mostra("Barney tem " + (ano - 1976) + " anos");
+  // mostra("Olá Pessoal!");
   // o resultado que mostrará é um resultado de looping do ola, o JS nao entendeu pois não tem parametro. O parametro deverá ser colocado no 2 bloco da função ()
+
+  function fazPegadinha() {
+    alert("Olá");
+
+  }
+
+
+
 </script>
 
 
