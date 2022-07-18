@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando IMC</title>
+</head>
+
+<body>
+
+  <script>
+    function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
+      document.write(frase);
+      pulaLinha();
+    }
+    //no blooc abaixo temos as variáveis, mas existe outra dorma de utiliza-las sem precisar ficar alterando.
+    // var pesoRenata = 91;
+    // var alturaRenata = 1.76;
+    // var imcRenata = pesoRenata / (alturaRenata * alturaRenata);
+    // mostra("O IMC da Renata é" + imcRenata);
+
+    // var pesoAmigo = 68;
+    // var alturaAmigo = 1.72;
+    // var imncAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+    // mostra("O imc do mue amigo é:" + imc);
+
+    function calculaImc(altura, peso) { // aqui recebemos os dois parametros
+      var imc = peso / (altura * altura);
+      mostra("O imc calculado é: " + imc);
+    }
+
+    calculaImc(1.71, 73); // declaramos o valor dos nossos parametros
+    calculaImc(1.72, 68);
+    //quando criamos uma função que receberá um parametro preciso que ela seja preparada/delcarada, e depois quando chamarmos ela, o JS saberá o que fazr
+  </script>
+
+</body>
+
+</html>

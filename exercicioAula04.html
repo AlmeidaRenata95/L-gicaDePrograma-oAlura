@@ -11,7 +11,7 @@
 <body>
   <p>
     <!-- exercicio -->
-    Rafaela, estudante de programação, quis fazer uma brincadeira com sua amiga Bruna. Ela criou um programa que, ao ser
+    <!-- Rafaela, estudante de programação, quis fazer uma brincadeira com sua amiga Bruna. Ela criou um programa que, ao ser
     aberto, exibe 9 alertas. Isso fará com que sua amiga clique 1 vez em cada um deles e fique entediada(9 vezes ao
     todo). Cada alerta é uma mensagem brincando com ela. Contudo, para fazer bonito, ela colocou as 9 instruções dentro
     de uma função que chamou fazPegadinha:
@@ -28,59 +28,153 @@
       alert("Clicando em");
       alert("Ok");
       alert("né?");
-    } -->
+    } 
+    fazPegadinha();
+  
+  -->
 
-  <p>Gilberto aprendeu que funções podem tornar seu programa mais fácil de manter. Veja o programa que ele criou:</p>
-  <script>
+    <!-- <p>Gilberto aprendeu que funções podem tornar seu programa mais fácil de manter. Veja o programa que ele criou:</p>
+  <!-- <script> -->
     // function pulaLinha() {
 
-    //   document.write("<br>");
+    // document.write("<br>");
     // }
 
     // var titulo = "Bem-vindo ao meu programa!";
 
-    // document.write("<h1>" + titulo + "</h1>");
+    // document.write("
+  <h1>" + titulo + "</h1>");
 
-    // pulaLinha();
+  // pulaLinha();
 
-    // document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+  // document.write("Vocês não sabem o que tive que aprender para fazer isso!");
 
-    // pulaLinha();
+  // pulaLinha();
 
-    // document.write("Contudo, assistindo os vídeos e estudando ...");
+  // document.write("Contudo, assistindo os vídeos e estudando ...");
 
-    // pulaLinha();
+  // pulaLinha();
 
-    // document.write("Eu vou mais longe!");
+  // document.write("Eu vou mais longe!");
 
-    // pulaLinha();
-    // Contudo, Gilberto perdeu um aspecto importante sobre o uso de funções. Digo isso, porque quando ele achou melhor pular duas linhas em todos os lugares do seu programa ele fez a seguinte alteração:
+  // pulaLinha();
+  // Contudo, Gilberto perdeu um aspecto importante sobre o uso de funções. Digo isso, porque quando ele achou melhor
+  pular duas linhas em todos os lugares do seu programa ele fez a seguinte alteração:
 
+  function pulaLinha() {
+
+  document.write("<br><br>");
+  }
+
+  var titulo = "Bem-vindo ao meu programa!";
+
+  document.write("<h1>" + titulo + "</h1>");
+
+  pulaLinha();
+
+  document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+
+  pulaLinha();
+
+  document.write("Contudo, assistindo os vídeos e estudando ...");
+
+  pulaLinha();
+
+
+  document.write("Eu vou mais longe!");
+
+  pulaLinha(); -->
+
+  // para tornar o cpodigo mais limpo é ideal que visualize como é a função, neste ultimo exemplo alteramos a função
+  pulaLinha para que ela pule duas linhas e não seja necessário chamar duas vezes a função pulalinha.]
+  // pula linha recebe uma instrução para pular linha.
+  // Tuane tem o hábito de colocar sempre três asteriscos antes e depois das mensagens de alerta. Vejamos um exemplo de
+  seu código: -->
+
+  //
+  <meta charset="UTF-8">
+  //
+  <script>
+//     var idade1 = 10;
+//     var idade2 = 20;
+//     var idade3 = 30;
+//     var totalIdades = idade1 + idade2 + idade3;
+//     var mediaIdades = totalIdades/3;
+//     alert("***Total de idades é " + totalIdades + "***");
+//     alert("***A média das idades é " +  mediaIdades + "***");
+// </script>
+  <!-- // Qual das opções abaixo cria corretamente a função exibeAlerta, que recebe como parâmetro o texto que queremos
+  exibir no alerta, e que realiza a concatenação com os três asteriscos?
+
+  // resposta
+  // function exibeAlerta(mensagem) {
+  // alert("***" + msg + "***");
+  // }
+
+  // var idade1 = 10;
+  // var idade2 = 20;
+  // var idade3 = 30;
+  // var totalIdades = idade1 + idade2 + idade3;
+  // var mediaIdades = totalIdades/3;
+
+  // exibeAlerta("Total de idades é " + totalIdades);
+  // exibeAlerta("A média das idades é " + mediaIdades); -->
+
+  <!-- Escreva um programa que exiba a mensagem "Nossa diferença de idade é", concatenando o resultado da subtração da sua
+  idade com a do seu irmão (ou de um amigo). A resposta pode dar negativa, sem dúvida. Não esqueça de usar as funções
+  pulaLinha e mostra e inclusive a tag
+  <meta> para resolver problema de acentuação.
+
+  Você não precisa submeter a resposta, basta criar o programa, testar e verificar se tudo funciona. Se pintar alguma
+  dúvida, não deixe de postar no fórum! -->
+
+  <!-- <meta charset="UTF-8">
+  <script>
     function pulaLinha() {
-
-      document.write("<br><br>");
+      document.write("<br>");
     }
 
-    var titulo = "Bem-vindo ao meu programa!";
+    function mostra(frase) {
+      document.write(frase);
+    }
 
-    document.write("<h1>" + titulo + "</h1>");
+    var minhaIdade = 18;
+    var idadeIrmao = 15;
 
-    pulaLinha();
+    mostra("Nossa diferença de idade é " + (minhaIdade - idadeIrmao));
+    pulaLinha(); -->
 
-    document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+  <!-- Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?
 
-    pulaLinha();
+    Vamos criar um programa para resolver a tarefa!
+    
+    Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
+    
+    Não esqueça de usar o pulaLinha e o mostra. -->
 
-    document.write("Contudo, assistindo os vídeos e estudando ...");
+  <!-- <meta charset="UTF-8">
 
-    pulaLinha();
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var anoAtual = 2016; 
+
+        var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostra(quantidadeDeGeracoes);
+    </script> -->
 
 
-    document.write("Eu vou mais longe!");
 
-    pulaLinha();
+  </script>
 
-// para tornar o cpodigo mais limpo é ideal que visualize como é a função, neste ultimo exemplo alteramos a função pulaLinha para que ela pule duas linhas e não seja necessário chamar duas vezes a função pulalinha.]
-// pula linha recebe uma instrução para pular linha. 
   </script>
 </body>
