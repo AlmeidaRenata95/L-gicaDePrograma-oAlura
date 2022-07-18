@@ -11,15 +11,16 @@
 <body>
 
   <script>
-    function pulaLinha() {
-      document.write("<br>");
-      document.write("<br>");
-    }
+    //EXEMPLO 1
+    // function pulaLinha() {
+    //   document.write("<br>");
+    //   document.write("<br>");
+    // }
 
-    function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
-      document.write(frase);
-      pulaLinha();
-    }
+    // function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
+    //   document.write(frase);
+    //   pulaLinha();
+    // }
     //no blooc abaixo temos as variáveis, mas existe outra dorma de utiliza-las sem precisar ficar alterando.
     // var pesoRenata = 91;
     // var alturaRenata = 1.76;
@@ -31,14 +32,58 @@
     // var imncAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
     // mostra("O imc do mue amigo é:" + imc);
 
-    function calculaImc(altura, peso) { // aqui recebemos os dois parametros
-      var imc = peso / (altura * altura);
-      mostra("O imc calculado é: " + imc);
+    // function calculaImc(altura, peso) { // aqui recebemos os dois parametros
+    //   var imc = peso / (altura * altura);
+    //   mostra("O imc calculado é: " + imc);
+    // }
+
+    // calculaImc(1.71, 73); // declaramos o valor dos nossos parametros
+    // calculaImc(1.72, 68);
+    //quando criamos uma função que receberá um parametro preciso que ela seja preparada/delcarada, e depois quando chamarmos ela, o JS saberá o que fazer
+
+    // EXEMPLO 2 - Neste exemplo nossa funcção calculaImc receberá 4 parametros e somaremos esses valores. Mas caso tenhamos que modificar os valores ficará complicado.
+    // function pulaLinha() {
+    //   document.write("<br>");
+    //   document.write("<br>");
+    // }
+
+    // function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
+    //   document.write(frase);
+    //   pulaLinha();
+    // }
+
+    // function calculaImc(alturaRenata, pesoRenata, alturaDiego, pesoDiego) { // aqui recebemos os dois parametros
+    //   var imc1 = pesoRenata / (alturaRenata * alturaRenata);
+    //   var imc2 = pesoDiego / (alturaDiego * alturaDiego);
+    //   var imcTotal = imc1 + imc2;
+
+    //   mostra("A soma dos imc's é:  " + imcTotal);
+    // }
+    // calculaImc(1.71, 73, 1.72, 76);
+
+
+    function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
     }
 
-    calculaImc(1.71, 73); // declaramos o valor dos nossos parametros
-    calculaImc(1.72, 68);
-    //quando criamos uma função que receberá um parametro preciso que ela seja preparada/delcarada, e depois quando chamarmos ela, o JS saberá o que fazr
+    function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
+      document.write(frase);
+      pulaLinha();
+    }
+
+    function calculaImc(altura, peso) { // aqui recebemos os dois parametros
+
+      var imc = peso / (altura * altura);
+      return imc; //o return devolve o resultado da minha variável imc que foi calculado pela função calculaImc - resultado sempre a esquerda. 
+    }
+
+    var imcRenata = calculaImc(1.71, 73);
+    var imcDiego = calculaImc(1.72, 68);
+
+    mostra(imcRenata);
+    mostra(imcDiego);
+
   </script>
 
 </body>
