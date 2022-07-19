@@ -76,15 +76,19 @@
 
       var imc = peso / (altura * altura);
       return imc; //o return devolve o resultado da minha variável imc que foi calculado pela função calculaImc - resultado sempre a esquerda. 
+      //return peso / (altura * altura);
     }
 
     var imcRenata = calculaImc(1.71, 73);
     var imcDiego = calculaImc(1.72, 68);
+    var totalImc = imcRenata + imcDiego;
+    document.write = ("a soma dos imc's é: " + totalImc)
 
     mostra(imcRenata);
     mostra(imcDiego);
 
   </script>
+  // A FUNÇÃO SEMPRE RETORNA UM PARÂMETRO.CONCATENAÇÃO NÃO É FEITA COM A FUNÇÃO, E SIM COM O RETORNO QUE ELA DÁ.
 
 </body>
 
