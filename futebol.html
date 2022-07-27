@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+  function pulaLinha() {
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  // o resultado virá em formato string concatenando os valores informados
+  var vitorias = prompt("Entre com o número de vitórias: ");
+  var empates = prompt("Entre com o número de empates: ");
+
+  var pontos = vitorias * 3 + empates;
+  console.log("os pontos do seu time é: " + pontos);
+
+  // Utilizando o parseInt para trazer meu resultado em formato número. Pssa o retorno do prompt
+  var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+  var empates = parseInt(prompt("Entre com o número de empates: "));
+
+  var pontos = vitorias * 3 + empates;
+  console.log("os pontos do seu time é: " + pontos);
+  // document.write("os pontos do seu time é: " + pontos);
+  // mostra("os pontos do seu time é " + pontos);
+
+
+
+</script>
