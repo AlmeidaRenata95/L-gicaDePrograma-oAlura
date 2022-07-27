@@ -62,6 +62,32 @@
     // calculaImc(1.71, 73, 1.72, 76);
 
 
+    // function pulaLinha() {
+    //   document.write("<br>");
+    //   document.write("<br>");
+    // }
+
+    // function mostra(frase) { // aqui vai o parametro e é o parametro de uma instrução.
+    //   document.write(frase);
+    //   pulaLinha();
+    // }
+
+    // function calculaImc(altura, peso) { // aqui recebemos os dois parametros
+
+    //   var imc = peso / (altura * altura);
+    //   return imc; //o return devolve o resultado da minha variável imc que foi calculado pela função calculaImc - resultado sempre a esquerda. 
+    //   //return peso / (altura * altura);
+    // 
+
+    // var imcRenata = calculaImc(1.71, 73);
+    // var imcDiego = calculaImc(1.72, 68);
+    // var totalImc = imcRenata + imcDiego;
+    // document.write = ("a soma dos imc's é: " + totalImc)
+
+    // mostra(imcRenata); 
+    // mostra(imcDiego);
+
+    // FUNÇÃO: UTILIZANDO O METODO PROMPT********************************************
     function pulaLinha() {
       document.write("<br>");
       document.write("<br>");
@@ -74,21 +100,21 @@
 
     function calculaImc(altura, peso) { // aqui recebemos os dois parametros
 
-      var imc = peso / (altura * altura);
-      return imc; //o return devolve o resultado da minha variável imc que foi calculado pela função calculaImc - resultado sempre a esquerda. 
-      //return peso / (altura * altura);
+      return peso / (altura * altura);
+
     }
 
-    var imcRenata = calculaImc(1.71, 73);
-    var imcDiego = calculaImc(1.72, 68);
-    var totalImc = imcRenata + imcDiego;
-    document.write = ("a soma dos imc's é: " + totalImc)
+    var nome = prompt("informe o seu nome");
+    var alturaInformada = prompt(nome + ", Informe sua altura");
+    var pesoInformado = prompt(nome + ", Informe seu peso");
 
-    mostra(imcRenata);
-    mostra(imcDiego);
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    document.write(nome + " , o seu IMC IMC calculado é " + imc);
+
 
   </script>
-  // A FUNÇÃO SEMPRE RETORNA UM PARÂMETRO.CONCATENAÇÃO NÃO É FEITA COM A FUNÇÃO, E SIM COM O RETORNO QUE ELA DÁ.
+  <!--A FUNÇÃO SEMPRE RETORNA UM PARÂMETRO.CONCATENAÇÃO NÃO É FEITA COM A FUNÇÃO, E SIM COM O RETORNO QUE ELA DÁ.-->
 
 </body>
 
