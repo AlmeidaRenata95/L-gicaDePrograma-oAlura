@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando IMC</title>
+</head>
+
+<body>
+
+  <script>
+    function pulaLinha() {
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    function mostra(frase) {
+      document.write(frase);
+      pulaLinha;
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10); //com math.ramdom podemos gerar um número aleatório 
+    var chute = parseInt(prompt("Digite seu chute!"));
+    console.log(numeroPensado); // colocando o console.log no console do navegador ele mostra e testa as duas condições tarzendo o resultado correto p/ adivinhar...
+
+
+    if (chute == numeroPensado) {
+      mostra("você acertou!");
+    } else {
+      mostra("você errou, o número pensando foi: " + numeroPensado);
+    }
+
+    // if (chute != numeroPensando) { podemos utilizar outra forma mais simples de mostrar outro resultado utilizando o else
+    //   mostra("você errou, o número pensando foi: " + numeroPensando);
+    // 
+
+  </script>
+
+
+</body>
+
+</html>
