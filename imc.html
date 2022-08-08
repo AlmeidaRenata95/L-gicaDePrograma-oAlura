@@ -110,8 +110,26 @@
 
     var imc = calculaImc(alturaInformada, pesoInformado);
 
-    document.write(nome + " , o seu IMC IMC calculado é " + imc);
+    document.write(nome + " , o seu IMC calculado é " + imc);
 
+    if (imc < 18.5) {
+
+      mostra("você está abaixo do recomendado");
+    }
+
+    if (imc > 35) {
+
+      mostra("você está acima do recomendado");
+
+    }
+    //esse primeiro if foi incluso mais uma condição para que não fique muitos blocos, é uma abreviação.
+
+    if (imc >= 18.5 && imc <= 35); {
+
+      // if (imc <= 35) 
+      mostra("Parabéns, seu imc está excelente");
+
+    }
 
   </script>
   <!--A FUNÇÃO SEMPRE RETORNA UM PARÂMETRO.CONCATENAÇÃO NÃO É FEITA COM A FUNÇÃO, E SIM COM O RETORNO QUE ELA DÁ.-->
