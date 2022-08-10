@@ -11,8 +11,8 @@
 <body>
 
 
-  <script>
 
+  <!-- 
     // Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.
 
     // var celsius = parseInt(prompt("Temperatura em graus celcius: "));
@@ -33,42 +33,62 @@
 
     // var k = parseInt(prompt("Digite a velocidade: "));
     //   m = k / 3.6;
-    // document.write("o valor convertido em m/s é : " + m); 
+    // document.write("o valor convertido em m/s é : " + m);
 
     //   var m = parseInt(prompt("Digite a velocidade: "));
     //   k = m * 3.6;
     //   document.write("O valor convertido em km é: " + k);
 
     //    var m = parseInt(prompt("quantas milhas?"));
-    //    k = 1.61 * m; 
+    //    k = 1.61 * m;
     //   document.write("o valor em quilometros é: " + k);
 
 
-    // exercício calculando média de notas e dando o resultado aprovado ou reprovado. 
-    function pulaLinha() {
-      document.write("<br>");
-    }
-    function mostra(frase) {
-      document.write(frase);
-      pulaLinha();
-    }
+    // exercício calculando média de notas e dando o resultado aprovado ou reprovado.
+    // function pulaLinha() {
+    //   document.write("<br>");
+    // }
+    // function mostra(frase) {
+    //   document.write(frase);
+    //   pulaLinha();
+    // }
 
-    var nota1 = parseInt(prompt("Digite a nota do primeiro bimestre: "));
-    var nota2 = parseInt(prompt("Digite a nota do segundo bimestre: "));
-    var nota3 = parseInt(prompt("Digite a nota do terceiro bimestre: "));
+    // var nota1 = parseInt(prompt("Digite a nota do primeiro bimestre: "));
+    // var nota2 = parseInt(prompt("Digite a nota do segundo bimestre: "));
+    // var nota3 = parseInt(prompt("Digite a nota do terceiro bimestre: "));
 
-    var media = (nota1 + nota2 + nota3) / 3;
+    // var media = (nota1 + nota2 + nota3) / 3;
 
-    document.write("Sua média total é: " + media);
+    // document.write("Sua média total é: " + media);
 
-    se(media >= 7) {
-      document.write("Parabéns, você foi aprovado!!");
+    // se(media >= 7) {
+    //   document.write("Parabéns, você foi aprovado!!");
 
-    }
+    // }
 
-    se(media < 7) {
-      document.write("Poxa, não foi dessa vez! Reprovado. ");
-    }
+    // se(media < 7) {
+    //   document.write("Poxa, não foi dessa vez! Reprovado. ");
+    // } -->
+
+  <!-- //     Fac¸a um programa que leia o valor de um produto e imprima o valor com desconto, tendo
+// em vista que o desconto foi de 12% -->
+
+  <script>
+    var valorProduto = parseFloat(prompt("O valor do produto é: "));
+
+    var desconto = 0.012;
+    var valorFinal = valorProduto - desconto;
+
+    document.write("O valor a pagar é de : " + valorFinal);
+
+
+
+
+
+
+
+  </script>
+
 
 
   </script>
