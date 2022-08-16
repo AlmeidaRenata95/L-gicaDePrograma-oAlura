@@ -5,13 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="imc">
+  <link href="todosNumerosPares.html">
+  <link href="futebol.html">
+  <link href="anoCopa.html">
+  <link href="JogoDeAdivinhacao.html">
+  <link href="exercicioWhile.html">
+
+
 </head>
 
 <body>
+  <p>Lista de exercícios, alguns estarão na lista e outro no poderá utilizar o console para ver o código</p>
+
+  <ul>
+    <li><a href="imc"></a>IMC</li>
+    <li><a href="todosNumerosPares.html">Todos os números Pares</a></li>
+    <li><a href="futebol.html"></a>Futebol</li>
+    <li><a href="anoCopa.html"></a>Ano copa</li>
+    <li><a href="JogoDeAdivinhacao.html"></a>Jogo de Adivinhação</li>
+    <li><a href="exercicioWhile.html">Exercícios utilizando while</a></li>
 
 
-
+  </ul>
   <!-- 
     // Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit.
 
@@ -86,19 +102,64 @@
     // var novoSalario = salario + aumento;
     // document.write("Digite o valor do salário com aumento: " + novoSalario);
 
-    //A importancia de R$ 780.000,00 sera dividida entre tres ganhadores de um concurso. 
+    //A importancia de R$ 780.000,00 sera dividida entre tres ganhadores de um concurso.
     // Sendo que da quantia total: O primeiro ganhador recebera 46%; O segundo recebera 32%; O terceiro recebera o restante;Calcule e imprima a quantia ganha por cada um dos ganhadores.
+    // var valorPremio = 780.000;
+    // document.write("o valor total do prémio é: " + valorPremio);
+    // ganhador1 = valorPremio * 0.46;
+    // ganhador2 = valorPremio * 0.32;
+    // ganhador3 = valorPremio * 0.22;
+    // document.write("<br>");
+    // document.write("O ganhador 1 receberá: " + ganhador1 + ", o Ganhador 2 receberá: " + ganhador2 + " e o ganhador 3 receberá: " + ganhador3);
 
-    var valorPremio = 780.000;
-    document.write("o valor total do prémio é: " + valorPremio);
+    //. Uma empresa contrata um encanador a R$ 30,00 por dia. Fac¸a um programa que solicite o numero de dias trabalhados pelo encanador e imprima a quantia lıquida que devera ser paga, sabendo-se que sao descontados 8% para imposto de renda.
 
-    ganhador1 = valorPremio * 0.46;
-    ganhador2 = valorPremio * 0.32;
-    ganhador3 = valorPremio * 0.22;
+    // var diasTrabalhados = parseInt(prompt("digite quantos dias trabalhados: "));
+    // var valorDiaria = 30.00;
+    // var desconto = 0.08;
+    // desconto = valorDiaria * 0.08;
+    // var valoraReceber = diasTrabalhados - desconto;
+    // document.write("o valor total a receber é de: " + valoraReceber * diasTrabalhados);
 
-    document.write("<br>");
+    //EXERCÍCIOS COM WHILE - REPETIÇÃO
 
-    document.write("O ganhador 1 receberá: " + ganhador1 + ", o Ganhador 2 receberá: " + ganhador2 + " e o ganhador 3 receberá: " + ganhador3);
+    // function pulaLinha() {
+    //   document.write("<br>");
+    //   document.write("<br>");
+    // }
+    // function mostra(frase) {
+    //   document.write(frase);
+    //   pulaLinha;
+    // }
+
+    // var apenasPares = 1;
+    // while (anoCopa <= limite) { //enquanto a condição dentro do white for verdeira ele ficará executando o bloco até o resultado for maiior que ele e quando for ele encerra.
+    //   mostra("Numeros pares de 1 a 100" + anoCopa);
+    //   anoCopa = anoCopa + 4;
+    // }
+    // mostra("FIM");
+
+    //Todos os números entre 30 a 40, exceto 33 e 37! incremento 
+    var contador = 30;
+
+    while (contador <= 40) {
+
+      if (contador == 33) {
+        contador = contador + 1;
+      }
+      else if (contador == 37) {
+        contador = contador + 1;
+      }
+      else {
+        mostra(contador);
+        contador = contador + 1;
+      }
+    }
+
+    mostra("FIM");
+
+
+
 
 
 
