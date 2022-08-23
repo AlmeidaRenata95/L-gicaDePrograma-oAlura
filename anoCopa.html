@@ -12,6 +12,31 @@
 
 
   <script>
+    // function pulaLinha() {
+    //   document.write("<br>");
+    //   document.write("<br>");
+    // }
+
+    // function mostra(frase) {
+    //   document.write(frase);
+    //   pulaLinha;
+    // }
+
+    // var limite = parseInt(prompt("Entre com a data limite: ")); //colocando essa variável a genter fala pro programa até onde ele poderá ir
+
+    // var anoCopa = 1930;
+
+    // while (anoCopa <= limite) { //enquanto a condição dentro do white for verdeira ele ficará executando o bloco até o resultado for maiior que ele e quando for ele encerra. tdo que está neste bloco ficara repetindo
+
+
+    //   mostra("Teve copa em  " + anoCopa);
+    //   anoCopa = anoCopa + 4;
+
+
+    // }
+
+    // mostra("FIM");
+
     function pulaLinha() {
       document.write("<br>");
       document.write("<br>");
@@ -22,20 +47,16 @@
       pulaLinha;
     }
 
-    var limite = parseInt(prompt("Entre com a data limite: "));
-
     var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
 
-    while (anoCopa <= limite) { //enquanto a condição dentro do white for verdeira ele ficará executando o bloco até o resultado for maiior que ele e quando for ele encerra.
-
-
-      mostra("Teve copa em  " + anoCopa);
+    while (anoCopa <= limite) {
       anoCopa = anoCopa + 4;
-
-
+      mostra(anoCopa + " tem copa!");
     }
 
-    mostra("FIM");
+    //anoCopa = anoCopa + 4; coloquei essa função dentro do while para que ele seja executado antes de chamar novamente a variavel...
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
 
 
 

@@ -9,35 +9,67 @@
 </head>
 
 <body>
+  <!-- 
+  
+
+    // function pulaLinha() {
+    //   document.write("<br>");
+    //   document.write("<br>");
+    // }
+
+    // function mostra(frase) {
+    //   document.write(frase);
+    //   pulaLinha;
+    // }
+
+    // var numeroPensado = Math.round(Math.random() * 10); //com math.ramdom podemos gerar um número aleatório
+    // var chute = parseInt(prompt("Digite seu chute!"));
+    // console.log(numeroPensado); // colocando o console.log no console do navegador ele mostra e testa as duas condições tarzendo o resultado correto p/ adivinhar...
+
+
+    // if (chute == numeroPensado) {
+    //   mostra("você acertou!");
+    // } else {
+    //   mostra("você errou, o número pensando foi: " + numeroPensado);
+    // }
+
+    // if (chute != numeroPensando) { podemos utilizar outra forma mais simples de mostrar outro resultado utilizando o else
+    //   mostra("você errou, o número pensando foi: " + numeroPensando); -->
 
   <script>
+
     function pulaLinha() {
-      document.write("<br>");
+
       document.write("<br>");
     }
 
     function mostra(frase) {
+
       document.write(frase);
-      pulaLinha;
+      pulaLinha();
     }
 
-    var numeroPensado = Math.round(Math.random() * 10); //com math.ramdom podemos gerar um número aleatório 
-    var chute = parseInt(prompt("Digite seu chute!"));
-    console.log(numeroPensado); // colocando o console.log no console do navegador ele mostra e testa as duas condições tarzendo o resultado correto p/ adivinhar...
+    function sorteia(n) {
+      return Math.round(Math.random() * n);
+    }
+    // var numeroPensado = Math.round(Math.random() * 100);
 
+    var numeroPensado = sorteia(10);
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
 
     if (chute == numeroPensado) {
-      mostra("você acertou!");
+
+      mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
     } else {
-      mostra("você errou, o número pensando foi: " + numeroPensado);
+      if (chute > numeroPensado) {
+        mostra("voce errou, seu chute é maior que o número pensando");
+      } else {
+        mostra("VOCÊ ERROU, seu chute é menor que o número pensado");
+      }
     }
 
-    // if (chute != numeroPensando) { podemos utilizar outra forma mais simples de mostrar outro resultado utilizando o else
-    //   mostra("você errou, o número pensando foi: " + numeroPensando);
-    // 
 
   </script>
-
 
 </body>
 

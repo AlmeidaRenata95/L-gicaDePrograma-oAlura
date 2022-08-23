@@ -12,7 +12,7 @@
   <script>
     function pulaLinha() {
       document.write("<br>");
-      document.write("<br>");
+
     }
 
     function mostra(frase) {
@@ -21,23 +21,59 @@
     }
 
 
+    //Todos os números pares de 1 a 100.
+    // var contador = 2;
 
-    var contador = 2;
+    // while (contador <= 100) {
+    //   mostra(contador);
+    //   contador = contador + 2; // incrementa dois
+    // }
 
-    while (contador <= 100) {
-      mostra(contador);
-      contador = contador + 2; // incrementa dois
+    function pulaLinha() {
+      document.write("<br>");
     }
 
+    function mostra(frase) {
+      document.write(frase);
+      pulaLinha();
+    }
+
+
+
+
+
+    //Imprima em ordem decrescente todos os números entre 20 e 0, incluindo os limites! No final, escreva a palavra "FIM". DICA: você pode decrementar uma variável!
+    var contador = 20;
+
+    while (contador >= 0) {
+      mostra(contador);
+      contador = contador - 1; //discrementa 1
+    }
     mostra("FIM");
 
 
 
 
 
+    // var anoCopa = 1930;
+    // var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    // while (anoCopa <= limite) {
+
+    //   mostra(anoCopa + " tem copa!");
+    // }
+
+    // anoCopa = anoCopa + 4;
+
+    // mostra("Ufa! Esses foram os anos de copa até " + limite);
 
 
 
+
+
+
+
+    //O contador começa valendo 2 e a cada repetição ele é incrementado com mais dois. Sendo assim, teremos 2, 4, 6, 8... até chegar a 100! Quando o contador atingir 102 o while se recusará a repetir, assim, a próxima instrução será executada.
 
 
 
