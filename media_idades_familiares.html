@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <p>A idéia do programa abaixo é deixar ele mais simples para que não seja preciso ficar alterando o código o tempo
-    todo. </p>
+  <!-- <p>A idéia do programa abaixo é deixar ele mais simples para que não seja preciso ficar alterando o código o tempo
+    todo. </p> -->
   <script>
     function pulaLinha() {
       document.write("<br>");
@@ -21,17 +21,33 @@
       document.write(frase);
       pulaLinha;
     }
+    //abaixo é um programa mais simples, mas se quisermos torna-lo mais genérico e dê a possibilidade de interagir com o usuário.
+    // var idadePedro = 28;
+    // var idadeMarta = 32;
+    // var idadeJorge = 60;
+    // var idadeBete = 22;
+    // var totalIdade = (idadePedro + idadeMarta + idadeJorge + idadeBete);
+    // var mediaIdade = totalIdade / 4;
+    // mostra(mediaIdade);
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares: "));
+
+    var numero = 1; //pode ser 0 ou 1
+
+    var totalIdades = 0; // não colocar  esse tipo de variável que captura o total das idades dentro do while, senão será zerada e no final as medias de idades serão apenas divididas
+    //sobre o while quando entrar nele o total idade vai ser 0, le a idade e pega o totalIdade para guardar a idade que foi lida, o total idade deverá acumular todas as idades informadas pelo usuário, lá na ultima variavel MediaDasIdades podemos pegar a média acumulada. 
+    while (numero <= totalFamiliares) {
 
 
-    var idadePedro = 28;
-    var idadeMarta = 32;
-    var idadeJorge = 60;
-    var idadeBete = 22;
+      var idade = parseInt(prompt("informe idade do familiar "));
+      totalIdades = totalIdades + idade;
+      numero++
+    }
 
-    var totalIdade = (idadePedro + idadeMarta + idadeJorge + idadeBete);
-    var mediaIdade = totalIdade / 4;
+    var mediaDasIdades = totalIdades / totalFamiliares;
+    mostra("A Média das idades dos familiares é: " + mediaDasIdades)
+    mostra("fim")
 
-    mostra(mediaIdade);
 
 
 
