@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculando o valor de todos os funciónarios da minha empresa</title>
+</head>
+
+<body>
+  <script>
+    function pulaLinha() {
+      document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+      document.write(frase);
+      pulaLinha;
+    }
+    var totalFuncionarios = parseInt(prompt("Quantidade de funcionários: "));
+    var numero = 1;
+
+    var totalSalarios = 0;
+
+    while (numero <= totalFuncionarios) {
+      var salario = parseInt(prompt("informe o salario do funcionário: "));
+
+      totalSalarios = totalFuncionarios + salario;
+      numero++
+    }
+
+    var mediaSalarios = totalSalarios / totalFuncionarios;
+    mostra("A média de salários dos funcionários são: " + mediaSalarios);
+
+
+
+
+  </script>
+</body>
+
+</html>
