@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
 <body>
+  <input>
+  <button>Compare com o meu segredo</button>
+  <script>
+    // neste primeiro exemplo mesmo que o usuário acerte o valor segredo, ele mostrará errou, pq quando o usuário abre a página ele já recarrega e traz como 0, ´no próximo exemplo criaremos uma função para chamar o bloco de código na hora certa.
+
+    // var segredo = 5;
+
+    // var input = document.querySelector("input");
+    // if (input.value == segredo) { //input.value vai comparar o meu valor segredo com o valor digitado pelo usuário
+
+    //   alert("Você ACERTOU");
+    // } else {
+    //   alert("Você ERRRRROUUUU!!!");
+    // }
+
+    var segredo = 5;
+
+    var input = document.querySelector("input");
+    if (input.value == segredo) { //input.value vai comparar o meu valor segredo com o valor digitado pelo usuário
+
+      alert("Você ACERTOU");
+    } else {
+      alert("Você ERRRRROUUUU!!!");
+    }
+
+
+  </script>
 
 </body>
 
