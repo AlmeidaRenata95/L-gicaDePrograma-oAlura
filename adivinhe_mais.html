@@ -24,16 +24,23 @@
     //   alert("Você ERRRRROUUUU!!!");
     // }
 
+    //criamos a função para chama-lo depois, o bloco de teste não deve ser executado assim que a página carrega, função criado por isso.
+
     var segredo = 5;
 
     var input = document.querySelector("input");
-    if (input.value == segredo) { //input.value vai comparar o meu valor segredo com o valor digitado pelo usuário
 
-      alert("Você ACERTOU");
-    } else {
-      alert("Você ERRRRROUUUU!!!");
+    function verifica() { //pensando no usuário não tem como ele abrir o console p/ chamar a função, então criaremos um botao que vai ser associado a função. 
+      if (input.value == segredo) { //input.value vai comparar o meu valor segredo com o valor digitado pelo usuário
+
+        alert("Você ACERTOU");
+      } else {
+        alert("Você ERRRRROUUUU!!!");
+      }
     }
 
+    var button = document.querySelector("button");
+    button.onclick = verifica; //dentro do button.onclick queremos guardar a função verifica
 
   </script>
 
