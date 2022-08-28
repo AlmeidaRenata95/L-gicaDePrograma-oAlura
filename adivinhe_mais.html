@@ -49,26 +49,37 @@
 
 
     //TRABALHANDO COM ARRAYS
-    var segredos = [5, 7, 10, 2]; //dentro do colchete é nossa lista com várias posições que começam com 0;
+    var segredos = [5, 7, 10, 2, 3]; //dentro dos colochetes são meus valores com posições, a posição começará sempre ao 0.
 
     var input = document.querySelector("input");
-
     input.focus();
-    function verifica() { //pensando no usuário não tem como ele abrir o console p/ chamar a função, então criaremos um botao que vai ser associado a função. 
-      if (input.value == segredo) { //input.value vai comparar o meu valor segredo com o valor digitado pelo usuário
 
-        alert("Você ACERTOU");
-      } else {
-        alert("Você ERRRRROUUUU!!!");
+    function verifica() {
+
+      var achou = false;
+
+      for (var posicao = 0; posicao < segredos.length; posicao++) {
+
+        if (input.value == segredos[posicao]) {
+
+          alert("Você ACERTOU!");
+          achou = true;
+          break;
+        }
       }
 
-      input.value = ""; //ao digitar o número (acertar ou não) limpará o campo.
-      input.focus(); //dará foco na caixa de texto.
+      if (achou == false) {
+        alert("Você ERROU!");
+      }
+
+      input.value = "";
+      input.focus();
+
     }
 
     var button = document.querySelector("button");
-    button.onclick = verifica; //dentro do button.onclick queremos guardar a função verifica. Não utilizar parenteses pq ele esperará algo e carrega a página, o que queremos é apenas guardar a função para que seja executada depois
 
+    button.onclick = verifica;
 
   </script>
 
