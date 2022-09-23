@@ -56,7 +56,15 @@
 // total = numeroReal / 5;
 // console.log(total);
 
+// var celsius = parseInt(prompt("Temperatura em graus celcius: "));
+// var f = (9 * celsius) / 5 + 32;
+// document.write("o valor convertido em Fah é: " + f);
 
+// var fh = parseInt(prompt("Temperatura em graus Fahrenheit: "));
+//     celsius = (5 ∗ fh) − 32/9;
+//     document.write("o valor convertido em fahrenheit é: " + celsius);
 
-var grausCelsius = parseFloat(prompt("Digite os graus celsius: "));
-converter = grausCelsius = 
+var kelvin = parseFloat(prompt("Temperatura em graus kelvin "));
+celsius = kelvin - 273.15;
+
+document.write("o valor convertido em graus kelvi é: " + celsius);

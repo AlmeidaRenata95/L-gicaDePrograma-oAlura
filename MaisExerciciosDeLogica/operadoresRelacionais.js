@@ -40,7 +40,6 @@ console.log(x + 2 != y);
 var x = 12, y = 8
 console.log( x >= 8);
 
-
 var x = 12, y = 8
 console.log (x <= 13);
 
