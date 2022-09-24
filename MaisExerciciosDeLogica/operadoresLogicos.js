@@ -11,3 +11,18 @@ var r,
   y = 3;
 r = !(x > 7 && x > y);
 console.log(r);
+
+var x = prompt("digite um valor inteiro");
+if (x % 2 == 0 || x < 0) {
+  alert("o valor é par ou negativo");
+}
+alert("fim do programa");
+
+var x, y = -1;
+prompt("digite um valor inteiro: ");
+if(x > 0) {
+  y = x % 3;
+  alert("o resto de 3 é: " x,y);
+}
+
+alert("fim do programa")
