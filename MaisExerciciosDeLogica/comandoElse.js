@@ -64,3 +64,67 @@ if (n1 > n2){
   alert("os numeros são iguais")
 }
 
+
+var num1 = prompt("digite um numero: ");
+var num2 = prompt("digite um numero: ");
+
+if (num1 > num2){
+  alert("o maior numero digitado foi: " + num1, num2)
+}
+alert("fim do programa");
+
+
+var numero = prompt("digite um numero: ");
+if (numero > 0){
+  if(numero * 2){
+    alert("a raiz quadrada do numero digitado é: " + numero)
+  }else{
+    if (numero < 0)
+    alert("o numero é negativo")
+  }
+  } 
+
+  var num = prompt("digite um numero inteiro");
+  if( num <= 1) {
+  num++;
+  alert("o numero é par")
+}else {
+  alert("o numero é impar")
+}
+
+var num1 = prompt("digite um numero");
+var num2 = prompt("digite outro numero");
+if(num1 > num2){
+  alert("o maior numero digitado foi: " + num1, num1);
+
+} alert("E a diferença entre eles é de: " + (num1-num2));
+ 
+
+var n1 = parseInt(prompt("digite um numero"));
+var n2 = parseInt(prompt("digite outro numero"));
+if(n1 == n2){
+  alert("os numeros são iguais")
+}else{
+  if (n1 > n2){
+    alert("o maior numero digitado foi: " + n1, n2);
+  }
+} 
+alert("a Diferença entre os número é de: " + (n1-n2));
+
+
+var nota1 = parseInt(prompt("Digite a primeira nota"));
+var nota2 = parseInt(prompt("Digite a segunda nota"));
+var notaValida = 9;
+ media = (nota1 + nota2)/2;
+ if(media == notaValida){
+  alert("Nota válida, você passou!")
+ }else{
+  alert("Nota inválida, você não passou")
+ }
+ alert("fim do programa");
+
+
+ var salario = prompt("Informe seu salário:");
+ var prestacaoEmprestimo = prompt("Informe o valor da parcela do emprestimo: ");
+ if(prestacaoEmprestimo > )
+
