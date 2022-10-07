@@ -124,7 +124,29 @@ var notaValida = 9;
  alert("fim do programa");
 
 
- var salario = prompt("Informe seu salário:");
- var prestacaoEmprestimo = prompt("Informe o valor da parcela do emprestimo: ");
- if(prestacaoEmprestimo > )
 
+var pesoIdeal;
+var h = parseFloat(prompt("digite sua altura: "));
+var peso = parseFloat(prompt("Digite seu peso: "));
+var sexo = prompt("qual seu sexo?:");
+
+
+  if (sexo == "feminino"){
+    pesoIdeal = (72.7 * h) - 58;
+    alert("o peso  é:" + pesoIdeal);
+  }else {
+    pesoIdeal = (62.1 * h) - 44.7;
+    alert("o peso ideal é:" + pesoIdeal)
+  }
+
+
+var n1 = parseFloat(prompt("Digite a nota primeira prova"));
+var n2 = parseFloat(prompt("Digite a nota segunda prova"));
+var n3 = parseFloat(prompt("Digite a nota terceira prova"));
+ media = (n1 + n2 + n3 )/3;
+
+alert("A média é: " + media);
+if(media <= 1){
+  alert("você foi reprovado");
+}else 
+  alert("Você foi aprovado");
