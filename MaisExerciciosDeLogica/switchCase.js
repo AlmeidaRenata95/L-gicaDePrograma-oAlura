@@ -12,4 +12,6 @@ switch (char) {
   case ":":
     alert("dois pontos");
     break;
+  default:
+    alert("Não é pontuação");
 }
