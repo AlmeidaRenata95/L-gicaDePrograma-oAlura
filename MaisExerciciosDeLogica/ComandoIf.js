@@ -23,4 +23,4 @@ if(x > 0) {
   alert("o resto de 3 é: " x,y);
 }
 
-alert("fim do programa")
+alert("fim do programa");

@@ -46,3 +46,4 @@ var i, j;
 for (i = 0, j = 10; i < j; i++, j--) {
   alert(" o valor de i é: " + i + "o valor de j é: " + j);
 }
+0;
